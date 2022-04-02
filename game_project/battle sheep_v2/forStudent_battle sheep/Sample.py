@@ -18,6 +18,7 @@ def InitPos(mapStat):
         Write your code here
 
     '''
+    print(111)
     return init_pos
 
 
