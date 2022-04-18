@@ -78,7 +78,7 @@ def gamestart(p_wall, v_wall):
         heros = []
         for hero in hero_sprites:
             heros.append((hero.rect.left, hero.rect.top, hero.landmine, hero.super_time, hero.score))
-        foods = [(1, 8, 9), (1, 7, 15)]
+        foods = []
         # 0 = landmine, 1 = power, 2 = pellet, 3 = bomb
         for landmine in landmine_sprites:
             foods.append((0, landmine.rect.left, landmine.rect.top))
