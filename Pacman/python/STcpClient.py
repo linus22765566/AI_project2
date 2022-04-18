@@ -12,7 +12,7 @@ infoServer = ["localhost", 8888]
 '''
     *   請將 idTeam 改成組別    *
 '''
-idTeam = 4
+idTeam = 23
 
 def _Connect(ip, port):
     socketCurrent = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
@@ -200,8 +200,9 @@ def GetGameStat():
     # unpack other player Stat
     otherPlayerStat = []
     for i in range(3):
+        itemBoard = []
         for j in range(5):
-            itemBoard = []
+            #itemBoard = []
             rbPlayer = _RecvUntil(socketServer, structItem.size)
             if rbPlayer is None:
                 print("[Error] : connection lose, stop program")
