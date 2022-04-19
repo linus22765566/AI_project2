@@ -45,6 +45,7 @@ def main():
         gamestart(p_wall, v_wall)
 
 def gamestart(p_wall, v_wall):
+    count = 0
     screen = initialize()
     wall_positions = drawWall(p_wall, v_wall)
     level = Game(wall_positions)
@@ -59,7 +60,7 @@ def gamestart(p_wall, v_wall):
     pellet_sprites = level.setPellet(GREEN, BLACK)
     bomb_sprites = level.setBomb()
     leave = False
-
+    count += 1
     gameScore = 0
     while True:
         for event in pg.event.get():
